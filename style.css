@@ -1,23 +1,48 @@
 body {
     font-family: Roboto, sans-serif;
+    cursor:default;
     font-size: 1rem;
 }
 
-main {
-    background-color: #023047;
+section {
+    width: 100%;
+    background-color: black;
+}
+
+section #img-car-first-Section {
+    width: 100%;
+    position: static;    
+    opacity: 0.6;
+}
+
+section .section-title {
+    margin: 25% 45% 5% 8%;
+    position:absolute;
+    top: 0;   
+}
+
+section .section-title h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+    font-weight: 1000;
+    font-family: 'Roboto', 'sans-serif';
 }
 
 header {
     background-color: #219ebc;
     padding: 0.625rem 4.56rem 0.625rem;
     box-shadow: 0 0 3px blue;
+    position: fixed;
+    width: 100%;
+    z-index: 1;   
 }
+
 
 .logo {
     margin-right: 0.3125rem;
     display: flex;
     align-items:center;
-    color: #023047;
+    color: #d2dce1;
 }
 
 a {
@@ -34,31 +59,41 @@ a {
     display: none;
 }
 
+section .section-title span {
+    color: #ffffffea;
+    font-size: 1.7rem;
+    font-family: monospace;
+}
+
 @media screen and (min-width: 800px) {
     .open {
         display: none;
     }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 770px) {
     .nav-bar {
         display: none;
     }
 
     .mobile-menu {
         columns: 2;
+
         }
+    header {
+        padding: 0.625rem 1.06rem 0.625rem;
+    }
 
     .mobile-menu-icon{
         display: flex;
+
     }
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
-    }
-    
 
+    }
     .mobile-options {
         align-items: center;
         background-color: transparent;
@@ -66,17 +101,25 @@ a {
         font-size: 0.90rem ;
         columns: 4;
     }
-
     .open {
         display: flex;
     }
-
     .logo {
         display: none;
     }
+
+    section .section-title h1 {
+        color: rgb(255, 255, 255);
+        font-size: 2.5rem;
+    }
+    section .section-title span {
+        color: #ffffffcf;
+        font-size: 1.2rem;
+        font-family: monospace;
+    }
 } 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
     .mobile-options {
         align-items: center;
         background-color: transparent;
@@ -84,4 +127,17 @@ a {
         font-size: 1.20rem;
         columns: 2;
     }
+
+    section .section-title h1 {
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+    }
+    section .section-title span {
+        color: #ffffffbe;
+        font-size: 0.7rem;
+        font-family: monospace;
+    }
+    
+
+
 }
