@@ -1,0 +1,65 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: #219ebc;
+    padding: 0.625rem 1.56rem;
+    box-shadow: 0 0 3px blue;
+}
+
+.logo {
+    margin-right: 0.3125rem;
+    display: flex;
+    align-items:center;
+    color: #023047;
+}
+
+a {
+    text-decoration: none;
+    color: #ffb703;
+    font-size: 1.06rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: flex;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+
+    .mobile-options {
+        align-items: center;
+        background-color: transparent;
+        margin: 1px;
+        font-size: 0.90rem ;
+    }
+
+    .open {
+        display: flex;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    .mobile-options {
+        align-items: center;
+        background-color: transparent;
+        margin: 0.7px;
+        font-size: 1.20rem ;
+    }
+}
