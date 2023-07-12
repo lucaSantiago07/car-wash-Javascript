@@ -1,5 +1,4 @@
 function openMenuMobile () {
-   
     let menuMobile = document.getElementById('navMobile')
     let classMenuMobile = menuMobile.getAttribute('class') 
     

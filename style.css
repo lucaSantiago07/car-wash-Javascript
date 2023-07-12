@@ -1,10 +1,15 @@
 body {
     font-family: Roboto, sans-serif;
+    font-size: 1rem;
+}
+
+main {
+    background-color: #023047;
 }
 
 header {
     background-color: #219ebc;
-    padding: 0.625rem 1.56rem;
+    padding: 0.625rem 4.56rem 0.625rem;
     box-shadow: 0 0 3px blue;
 }
 
@@ -29,10 +34,21 @@ a {
     display: none;
 }
 
+@media screen and (min-width: 800px) {
+    .open {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 730px) {
     .nav-bar {
         display: none;
     }
+
+    .mobile-menu {
+        columns: 2;
+        }
+
     .mobile-menu-icon{
         display: flex;
     }
@@ -48,10 +64,15 @@ a {
         background-color: transparent;
         margin: 1px;
         font-size: 0.90rem ;
+        columns: 4;
     }
 
     .open {
         display: flex;
+    }
+
+    .logo {
+        display: none;
     }
 } 
 
@@ -60,6 +81,7 @@ a {
         align-items: center;
         background-color: transparent;
         margin: 0.7px;
-        font-size: 1.20rem ;
+        font-size: 1.20rem;
+        columns: 2;
     }
 }
