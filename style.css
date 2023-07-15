@@ -4,8 +4,6 @@ body {
     font-size: 1rem;
 
 }
-
-
 header {
     background-color: #219ebc;
     padding: 0.625rem 4.56rem 0.625rem;
@@ -14,6 +12,11 @@ header {
     width: 100%;
     z-index: 1;   
     opacity: 1;
+}
+
+main {
+    top: 3.8em;
+    position: relative;
 }
 
 .logo {
@@ -44,13 +47,16 @@ header {
 .first-section {
     background-color: rgba(0, 0, 0, 0.497);
     width: 100%;
-    top: 49vh;
+    top: 0;
+    height: 100vh;
     position: relative;
+    display: flex;
 }
 
 
 .background-banner-image {
     background-color: rgb(0, 0, 0);
+    position: relative;
     
 }
 
@@ -59,17 +65,20 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vmin;
+    height: 94vh;
+    display: flex;
     opacity: 0.9;
     padding: 0;
+    position: relative;
 
 }
 
 section .section-title {
     position:relative;
-    margin-left: 5%;
-    width: 50vw;
-    padding: 1%;
+    margin: 0 5% 0 5%;
+    top: 0;
+    width: 100vw;
+    padding: 18rem 40.7rem 3rem 2.5rem;
 }
 
 section .section-title h1 {
@@ -91,6 +100,7 @@ section .section-title span {
 section .div-scroll-down {
     justify-content: end;
     display: flex;
+    width: 44vw;
     
 }
 
@@ -104,20 +114,74 @@ section .div-scroll-down span {
 }
 
 
-@media screen and (max-width: 950px) {
+@media screen and (min-width: 771px) and (max-width: 992px) {
     .open {
         display: none;
     }
 
+    .banner-image {
+        height: 100vh;
+    }
+
+    .first-section {
+        height: 100vh;
+        display: flex;
+    }
+
+    section .section-title {
+        width: 100vw;
+        height: 100vh;
+        padding: 37rem 8.6rem 10rem 2.5rem; 
+        margin: 0 5% 0 5%; 
+      }
+
+      .section-title .subtitle {
+        font-size: 2rem;
+      }
+
+      section .div-scroll-down span {
+        margin: 0;
+        font-size: 3.2rem;
+      }
+
+      section .div-scroll-down {
+        display: flex;
+        justify-content: center;
+        padding-top: 12rem;
+        padding-left: 8rem;
+        width: auto;
+      }
+  
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (min-width: 577px) and (max-width: 770px) {
+    
     .nav-bar {
         display: none;
     }
 
-    section .div-scroll-down span {
-        margin-left: 100%;
+    main {
+        display: grid;
+        position: relative;
+        top: 3.5em;
+    }
+
+    .background-banner-image{
+        position: relative;
+        top: 0;
+    }
+    .banner-image {
+        position: relative;
+        display: flex;
+        height: 95vh;
+        width: 100%;
+    }
+    .first-section {
+        background-color: rgba(0, 0, 0, 0.681);
+        width: 100%;
+        height: 100vh;
+        position: initial;
+        display: grid;
     }
     
     .mobile-menu {
@@ -157,25 +221,63 @@ section .div-scroll-down span {
         display: none;
     }
     section .section-title {
-        margin-top: 53vh;
+        width: 100vw;
+        height: 92vh;
+        top: 29px;
+        padding: 32rem 11.6rem 10rem 2.5rem;
+        margin: 0;
     }
     section .section-title h1 {
         color: rgb(255, 255, 255);
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
-    section .section-title span {
+    section .section-title .subtitle {
         color: #ffffffcf;
-        font-size: 1.2rem;
+        font-size: 2.2rem;
         font-family: monospace;
     }
 
+    section .div-scroll-down span {
+        margin: 0;
+        font-size: 3rem;
+        margin-right: 0;
+    }
+
     section .div-scroll-down {
-        margin-top: 7%;
-        position: static; 
+        display: flex;
+        justify-content: center;
+        padding-left: 12rem;
+        padding-top: 8rem;
+        width: auto;
+
     }
 
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
+   header {
+    padding: 0.625rem 1.45rem 0.625rem;
+   }
+   
+    .nav-bar {
+        display: none;
+    }
+
+    .mobile-menu {
+        columns: 2;
+
+        }
+    
+        .mobile-menu-icon{
+            display: flex;
+    
+        }
+        .mobile-menu-icon button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+    
+        }
+
     .mobile-options {
         background-color: transparent;
         margin: 0.7px;
@@ -184,24 +286,69 @@ section .div-scroll-down span {
         text-decoration: none;
         color: #ffffff;
     }
+
+    .mobile-options:hover {
+        color: rgba(0, 0, 0, 0.475);
+    }
+    .open {
+        display: flex;
+    }
+    .logo {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        position: initial;
+
+    }
+    .background-banner-image {
+        top: 0;
+        position: relative;
+    }
+
+    .banner-image {
+        position: relative;
+        top: 0px;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+    }
+
+    .first-section {
+        width: 100%;
+        height: 100vh;
+        position: initial;
+        display: grid;
+    }
+
     section .section-title {
-        margin: 70vmin 45% 5% 8%;
+       width: 100vw;
+       height: 93vh;
+       top: 56px;
+       padding: 18rem 4.6rem 10rem 2.5rem;
+       margin: 0;
     }
     section .section-title h1 {
         color: rgb(255, 255, 255);
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
-    section .section-title span {
+    section .section-title  .subtitle {
         color: #ffffffbe;
-        font-size: 0.7rem;
+        font-size: 1.5rem;
         font-family: monospace;
     }
     section .div-scroll-down {
-        margin-top: 0.2rem;
-        position: static; 
+        margin-top: 8.2rem;
+        display: flex;
+        padding-left: 3.6rem;
+        justify-content: center;
+        width: auto;
+
     }
     section .div-scroll-down span {
-        margin-left: 100%;
+        margin: 0;
+        font-size: 3rem;
     }
 
 }
@@ -209,15 +356,17 @@ section .div-scroll-down span {
 @media screen and (max-width: 470px) {
    main {
     display: grid;
+    position: static;
+    top: 0;
    }
    .background-banner-image {
-    top: 57px;
+    top: 0;
     position: relative;
-    background-color: black;
+
    }
    .banner-image {
     position: relative;
-    height: 94vh;
+    height: 100vh;
     display: flex;
    }
    .first-section {
@@ -229,18 +378,19 @@ section .div-scroll-down span {
    }
     section .section-title {
         width: 100vw;
-        height: 100vh;
-        padding: 25rem 4rem 5rem 2rem;
+        height: 88vh;
+        top: 54px;
+        padding: 22rem 4rem 5rem 2rem;
         margin: 0;
     }
 
     section .section-title h1 {
         color: #ffffff;
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
-    .section-title .subtitle {
-        font-size: 1.4rem;
+    section .section-title .subtitle {
+        font-size: 1.2rem;
     }
 
     section .div-scroll-down span{
@@ -252,15 +402,16 @@ section .div-scroll-down span {
         display: flex;
         justify-content: center;
         padding-left: 1.5rem;
-        margin-top: 12rem;
+        margin-top: 13rem;
+        width: auto;
     }
 }
-
 
 @media screen and (max-width: 376px) {
     
     main {
         display: grid;
+        position: static;
     }
     
 
@@ -297,6 +448,7 @@ section .div-scroll-down span {
         justify-content: center;
         padding-left: 1.5rem;
         margin-top: 5rem;
+        width: auto;
         
     }
     section .div-scroll-down span {
