@@ -1,0 +1,33 @@
+{
+  "name": "carwash-robson",
+  "version": "1.0.0",
+  "description": "Freelancer's job for client Robson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaSantiago07/car-wash-Javascript.git"
+  },
+  "keywords": [
+    "carwash",
+    "javascript",
+    "lava",
+    "jato",
+    "lavagem",
+    "automotiva"
+  ],
+  "author": "Lucas Santiago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaSantiago07/car-wash-Javascript/issues"
+  },
+  "homepage": "https://github.com/lucaSantiago07/car-wash-Javascript#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "webpack-cli": "^5.1.4"
+  }
+}

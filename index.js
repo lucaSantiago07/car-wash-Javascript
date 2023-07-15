@@ -1,3 +1,4 @@
+
 function openMenuMobile () {
     let menuMobile = document.getElementById('navMobile')
     let classMenuMobile = menuMobile.getAttribute('class') 
@@ -11,8 +12,8 @@ function openMenuMobile () {
     else {
         menuMobile.setAttribute('class',classMenuMobileOpen)
     }
-
     
 }
 
 document.getElementById('btnMobile').addEventListener('click', openMenuMobile)
+
