@@ -2,31 +2,9 @@ body {
     font-family: Roboto, sans-serif;
     cursor:default;
     font-size: 1rem;
+
 }
 
-section {
-    width: 100%;
-    background-color: black;
-}
-
-section #img-car-first-Section {
-    width: 100%;
-    position: static;    
-    opacity: 0.6;
-}
-
-section .section-title {
-    margin: 25% 45% 5% 8%;
-    position:absolute;
-    top: 0;   
-}
-
-section .section-title h1 {
-    color: rgb(255, 255, 255);
-    font-size: 3.5rem;
-    font-weight: 1000;
-    font-family: 'Roboto', 'sans-serif';
-}
 
 header {
     background-color: #219ebc;
@@ -35,8 +13,8 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1;   
+    opacity: 1;
 }
-
 
 .logo {
     margin-right: 0.3125rem;
@@ -45,10 +23,14 @@ header {
     color: #d2dce1;
 }
 
-a {
+.menu-desktop a {
     text-decoration: none;
-    color: #ffb703;
+    color: #ffffff;
     font-size: 1.06rem;
+}
+
+.menu-desktop a:hover {
+    color: rgba(0, 0, 0, 0.475);
 }
 
 .mobile-menu-icon {
@@ -59,16 +41,74 @@ a {
     display: none;
 }
 
-section .section-title span {
-    color: #ffffffea;
-    font-size: 1.7rem;
-    font-family: monospace;
+.first-section {
+    background-color: rgba(0, 0, 0, 0.497);
+    width: 100%;
+    top: 49vh;
+    position: relative;
 }
 
-@media screen and (min-width: 800px) {
+
+.background-banner-image {
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.banner-image{
+    background-image: url(assets/img/garage-gd5d60b517_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vmin;
+    opacity: 0.9;
+    padding: 0;
+
+}
+
+section .section-title {
+    position:relative;
+    margin-left: 5%;
+    width: 50vw;
+    padding: 1%;
+}
+
+section .section-title h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+    font-weight: 1000;
+    font-family: 'Roboto', 'sans-serif';
+    margin-bottom: 0.3rem;
+}
+
+
+section .section-title span {
+    color: #ffffffea;
+    font-size: 1.2rem;
+    font-family: monospace;
+    
+}
+
+section .div-scroll-down {
+    justify-content: end;
+    display: flex;
+    
+}
+
+section .div-scroll-down span {
+    font-size: 2.2rem;   
+}
+
+.second-section {
+    justify-content: space-around;
+    background-color: black;
+}
+
+
+@media screen and (max-width: 950px) {
     .open {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 770px) {
@@ -76,6 +116,10 @@ section .section-title span {
         display: none;
     }
 
+    section .div-scroll-down span {
+        margin-left: 100%;
+    }
+    
     .mobile-menu {
         columns: 2;
 
@@ -100,6 +144,11 @@ section .section-title span {
         margin: 1px;
         font-size: 0.90rem ;
         columns: 4;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .mobile-options:hover {
+        color: rgba(0, 0, 0, 0.475);
     }
     .open {
         display: flex;
@@ -107,7 +156,9 @@ section .section-title span {
     .logo {
         display: none;
     }
-
+    section .section-title {
+        margin-top: 53vh;
+    }
     section .section-title h1 {
         color: rgb(255, 255, 255);
         font-size: 2.5rem;
@@ -117,27 +168,144 @@ section .section-title span {
         font-size: 1.2rem;
         font-family: monospace;
     }
-} 
 
-@media screen and (max-width: 540px) {
+    section .div-scroll-down {
+        margin-top: 7%;
+        position: static; 
+    }
+
+}
+@media screen and (max-width: 575px) {
     .mobile-options {
-        align-items: center;
         background-color: transparent;
         margin: 0.7px;
         font-size: 1.20rem;
-        columns: 2;
+        columns: 2;        
+        text-decoration: none;
+        color: #ffffff;
     }
-
+    section .section-title {
+        margin: 70vmin 45% 5% 8%;
+    }
     section .section-title h1 {
         color: rgb(255, 255, 255);
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     section .section-title span {
         color: #ffffffbe;
         font-size: 0.7rem;
         font-family: monospace;
     }
+    section .div-scroll-down {
+        margin-top: 0.2rem;
+        position: static; 
+    }
+    section .div-scroll-down span {
+        margin-left: 100%;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+   main {
+    display: grid;
+   }
+   .background-banner-image {
+    top: 57px;
+    position: relative;
+    background-color: black;
+   }
+   .banner-image {
+    position: relative;
+    height: 94vh;
+    display: flex;
+   }
+   .first-section {
+    background-color: rgba(0, 0, 0, 0.597);
+    width: 100%;
+    height: 100vh;
+    position: initial;
+    display: grid;
+   }
+    section .section-title {
+        width: 100vw;
+        height: 100vh;
+        padding: 25rem 4rem 5rem 2rem;
+        margin: 0;
+    }
+
+    section .section-title h1 {
+        color: #ffffff;
+        font-size: 1.8rem;
+    }
+
+    .section-title .subtitle {
+        font-size: 1.4rem;
+    }
+
+    section .div-scroll-down span{
+        margin: 0;
+        font-size: 2.1rem;
+    }
+
+    section .div-scroll-down {
+        display: flex;
+        justify-content: center;
+        padding-left: 1.5rem;
+        margin-top: 12rem;
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+    
+    main {
+        display: grid;
+    }
     
 
+    .banner-image {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .first-section {
+        background-color: rgba(0, 0, 0, 0.47);
+        width: 100%;
+        height: 100vh;
+        position: initial;
+        display: grid;
+    }
+
+    section .section-title h1 {
+        color: rgb(255, 255, 255);
+        font-size: 2.3rem;   
+    }
+
+    section .section-title {
+      width: 100vw;
+      height: 100vh;
+      padding: 18rem 1.6rem 10rem 1.5rem;
+      margin: 0;
+    }
+    .section-title .subtitle {
+        font-size: 1.4rem;
+        
+    }
+    section .div-scroll-down {
+        display: flex;
+        justify-content: center;
+        padding-left: 1.5rem;
+        margin-top: 5rem;
+        
+    }
+    section .div-scroll-down span {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    .colunas {
+        background-color: black;
+    }
 
 }
