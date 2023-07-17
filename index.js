@@ -23,6 +23,7 @@ function switchSymb (button, text, sizeFont) {
     scrollDownArrow.style.paddingLeft = '2rem'
        scrollDownArrow.innerHTML = text
        scrollDownArrow.style.fontSize = sizeFont
+       scrollDownArrow.style.textDecoration = 'none'
        
 }
 
