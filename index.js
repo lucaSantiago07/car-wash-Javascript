@@ -43,3 +43,28 @@ function returnSymb (button, fontSize, text) {
 document.getElementById("scrollDownArrow").addEventListener('mouseleave', function () {
     returnSymb ('scrollDownArrow', '2.2rem', '&#10096&#10096') 
 })
+
+
+
+async function initMap() {
+    let map;
+    //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const marketPoint = { lat: -12.87280, lng: -38.46496 };
+  const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
+
+  
+  map = new Map(document.getElementById("map"), {
+    zoom: 17,
+    center: marketPoint,
+    mapId: 'Lucas'
+  });
+
+  const marker = new google.maps.Marker({
+    map: map,
+    position: marketPoint,
+    title: 'Lava a jato',
+  })
+ 
+
+}
