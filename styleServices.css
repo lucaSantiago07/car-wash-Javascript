@@ -1,12 +1,32 @@
-.title h1 {
-    color: rgba(57, 179, 235, 0.883);
+body {
+    font-family: 'Roboto';
 }
+
 .title span {
-    color: rgba(128, 128, 128, 0.79);
+    font-size: 1em;
+}
+
+.title-service {
+    color: rgba(18, 18, 29, 0.658);
+    
+}
+
+.title h3 {
+    color: rgba(8, 28, 37, 0.883);
+    font-weight: 900;
+    font-size: 1.24em;
+
+}
+.title li {
+    color: rgba(62, 74, 75, 0.79);
+    font-size: 0.8em;
 }
 .card {
     width: 10rem;
 }
+
+
+
 .card :first-child {
     width: 100%;
 }
