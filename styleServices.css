@@ -1,0 +1,15 @@
+.title h1 {
+    color: rgba(57, 179, 235, 0.883);
+}
+.title span {
+    color: rgba(128, 128, 128, 0.79);
+}
+.card {
+    width: 10rem;
+}
+.card :first-child {
+    width: 100%;
+}
+.card img {
+    width: 100%;
+}
