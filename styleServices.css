@@ -25,8 +25,13 @@ body {
     width: 10rem;
 }
 
+.effect {
+    opacity: 0.5;
+}
 
-
+.effect:hover {
+    opacity: 1;
+}
 .card :first-child {
     width: 100%;
 }
